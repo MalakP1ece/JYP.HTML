@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NPC | Planning & Registration</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #08080d;
+  color: white;
+}
+
+header {
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #101019;
+  border-bottom: 1px solid #29243d;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #a78bfa;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 22px;
+}
+
+nav a:hover {
+  color: #a78bfa;
+}
+
+.hero {
+  text-align: center;
+  padding: 75px 20px;
+  background: linear-gradient(#08080dcc, #08080df0),
+  url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80") center/cover;
+}
+
+.hero p {
+  color: #b9b5c9;
+  margin-top: 15px;
+}
+
+h1 {
+  font-size: clamp(34px, 5vw, 58px);
+}
+
+h1 span {
+  color: #a78bfa;
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 45px 22px;
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+
+h2 span {
+  color: #a78bfa;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-bottom: 65px;
+}
+
+.card {
+  background: #13131e;
+  border: 1px solid #302747;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #a78bfa;
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 22px;
+}
+
+.number {
+  color: #a78bfa;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #b9b5c9;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+form {
+  max-width: 750px;
+  margin: auto;
+  background: #13131e;
+  padding: 30px;
+  border: 1px solid #302747;
+  border-radius: 18px;
+}
+
+label {
+  display: block;
+  margin: 17px 0 8px;
+  color: #ded9ed;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #383248;
+  border-radius: 8px;
+  background: #090911;
+  color: white;
+  font-size: 15px;
+}
+
+button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 15px;
+  background: linear-gradient(90deg, #7c3aed, #4f46e5);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+#message {
+  margin-top: 18px;
+  color: #c4b5fd;
+  text-align: center;
+}
+
+.note {
+  text-align: center;
+  color: #a9a4b8;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #9993ad;
+  border-top: 1px solid #29243d;
+  margin-top: 50px;
+}
+
+@media (max-width: 650px) {
+  header {
+    flex-direction: column;
+    gap: 18px;
+  }
+  nav a {
+    margin: 0 7px;
+    font-size: 13px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">NPC<span> .</span></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="challenges.html">Challenges</a>
+    <a href="planning.html">Planning & Registration</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Planning <span>& Registration</span></h1>
+  <p>Prepare your team. Build your ideas. Get ready to code.</p>
+</section>
+
+<main>
+
+  <section>
+    <h2>Competition <span>Planning</span></h2>
+
+    <div class="timeline">
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=80" alt="Team meeting">
+        <div class="card-content">
+          <div class="number">STEP 01</div>
+          <h3>Registration</h3>
+          <p>Present your team, choose your challenge and submit your application. Dates to be announced.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Student working on a laptop">
+        <div class="card-content">
+          <div class="number">STEP 02</div>
+          <h3>Preparation</h3>
+          <p>Develop your idea, practise your coding skills and prepare your project.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Technology team collaborating">
+        <div class="card-content">
+          <div class="number">STEP 03</div>
+          <h3>Competition Day</h3>
+          <p>Present your work, solve challenges and share your creativity with other participants.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="registration">
+    <h2>Join the <span>Competition</span></h2>
+
+    <form id="registrationForm">
+      <label for="name">Full name</label>
+      <input id="name" name="name" type="text" placeholder="Enter your full name" required>
+
+      <label for="email">Email address</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+      <label for="city">City</label>
+      <input id="city" name="city" type="text" placeholder="Your city" required>
+
+      <label for="team">Team name</label>
+      <input id="team" name="team" type="text" placeholder="Give your team a name" required>
+
+      <label for="level">Programming level</label>
+      <select id="level" name="level" required>
+        <option value="">Choose your level</option>
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+      </select>
+
+      <label for="challenge">Choose your challenge</label>
+      <select id="challenge" name="challenge" required>
+        <option value="">Select a challenge</option>
+        <option>Web Development</option>
+        <option>Algorithms</option>
+        <option>Artificial Intelligence</option>
+      </select>
+
+      <label for="idea">Tell us about your project</label>
+      <textarea id="idea" name="idea" rows="4" placeholder="Describe your idea..."></textarea>
+
+      <button type="submit">Submit Registration ↗</button>
+      <p id="message" role="status"></p>
+      <p class="note">Demo form only — connect a registration service to receive real applications.</p>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 National Programming Competition · Code the Future
+</footer>
+
+<script>
+document.getElementById("registrationForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  document.getElementById("message").textContent =
+    "Thank you! The demo form works, but your application has not been sent to an organizer.";
+});
+</script>
+
+</body>
+</html>
